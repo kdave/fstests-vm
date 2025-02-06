@@ -18,7 +18,7 @@ Troubleshooting:
 - if it does not work, `mkosi clean` and try again
 - if it does not work on openSUSE, try it on Fedora and check differences
 - openSUSE wants to set up system for the first time and manually enter locale/country
-  /etc/vconsole.conf may fix it
+  (fixed by /etc/vconsole.conf "KEYMAP=us")
 - if it fails due to weird file errors (EBUSY) try setting `WorkspaceDirectory`
 - same fs with sources, cache and output prevents problems and speeds things up
 
