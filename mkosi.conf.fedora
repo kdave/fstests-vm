@@ -1,0 +1,15 @@
+# Only differences
+[Distribution]
+Distribution=fedora
+Release=41
+
+[Packages]
+-kernel-default
++kernel
+-systemd-network
++systemd-networkd
+-iproute2
+-openssl-3
+-pattern*
+-glibc-locale
+-*-devel
