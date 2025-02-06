@@ -1,0 +1,14 @@
+#!/bin/sh
+
+cd mkosi.extra/home/build
+
+if ! [ -d "btrfs-progs" ]; then
+	git clone https://github.com/kdave/btrfs-progs
+fi
+
+if ! [ -d "xfstests" ]; then
+	git clone https://github.com/kdave/xfstests
+fi
+
+( cd btrfs-progs && git pull )
+( cd xfstests && git pull )
